@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/Modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>To-Do Web</h1>
+        <a href="#modal" class="Boton">Agregar Tarea <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+
+    </header>
+
+    <div class="Tareas">
+
+        <div class="Asignaciones">
+            <div class="Titulo">
+                <p>Sin asignar</p>
+            </div>
+            <div class="Seccion" id="tarjetas1">
+                <div class="Tarjetas" id="asignar">
+                </div>
+            </div>
+        </div>
+
+        <div class="Asignaciones">
+            <div class="Titulo">
+                <p>En progreso</p>
+            </div>
+            <div class="Seccion" id="progreso1">
+                <div class="Tarjetas" id="progreso"></div>
+            </div>
+        </div>
+
+        <div class="Asignaciones">
+            <div class="Titulo">
+                <p>En revision</p>
+            </div>
+            <div class="Seccion" id="revision1">
+                <div class="Tarjetas" id="revision"></div>
+            </div>
+        </div>
+
+        <div class="Asignaciones">
+            <div class="Titulo">
+                <p>Completo</p>
+            </div>
+            <div class="Seccion" id="completo1">
+                <div class="Tarjetas" id="completo"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal_container">
+            <form id="crear-form" class="form-style-9">
+                <ul>
+                    <li>
+                        <input id="titulo" type="text" name="field3" class="field-style field-full align-none" placeholder="Titulo" />
+                    </li>
+                    <!-- <li>
+                        <select name="" id="" class="field-style field-full align-none">
+                            <option value="">Seleccione un Area</option>
+                        </select>
+                    </li> -->
+                    <li>
+                        <textarea id="discripcion" name="field5" class="field-style" placeholder="Descripcion"></textarea>
+                    </li>
+                    <li>
+                        <input id="submit" type="submit" value="Subir tarea" />
+                        <a href="#general">Cerrar</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+    <div class="modalidades"></div>
+
+    <script src="js/Drag.js"></script>
+</body>
+
+</html>
